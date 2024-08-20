@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Sushi</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <script src="cardapio.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Yukan's Sushi</h1>
+    </header>
+
+    <div class="menu-container" id="menu">
+        <!-- Os itens do cardápio serão adicionados aqui pelo JavaScript -->
+    </div>
+
+    <button id="cart-icon" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </button>
+
+    <div class="cart-container" id="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+        <button id="remove-all-btn">Remover Tudo</button>
+        <button id="checkout-btn">Finalizar Pedido</button>
+    </div>
+
+    <div class="invoice" id="invoice">
+        <h2>Nota Fiscal</h2>
+        <div class="content" id="invoice-content">
+            <!-- Itens da nota fiscal serão adicionados aqui pelo JavaScript -->
+        </div>
+        <div class="total" id="invoice-total">Total: R$ 0,00</div>
+        <button id="download-invoice">Baixar PDF</button>
+        <button id="close-invoice">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
